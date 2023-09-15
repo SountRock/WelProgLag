@@ -1,4 +1,11 @@
-﻿Console.WriteLine("Program 2");
+﻿bool checkAnswer(string answer)
+{
+    if(answer.ToLower().Trim() == "y"){
+            return true;
+    } else {
+        return false;
+    }
+}
 
 bool repeat = true;
 string answer;
@@ -7,6 +14,8 @@ int[] values = new int[2];
 
 while (repeat) 
 {
+    Console.WriteLine();
+    Console.WriteLine("Program 2");
     Console.WriteLine("Enter two values:");
     values[0] = Convert.ToInt32(Console.ReadLine());
     values[1] = Convert.ToInt32(Console.ReadLine());
@@ -20,23 +29,27 @@ while (repeat)
 
     Console.WriteLine("Repear?(Y/N)");
     answer = Console.ReadLine();
-    if(answer.ToLower().Trim() == "y"){
-        repeat = true;
+
+    if (answer.ToLower().Trim() == "y" || answer.ToLower().Trim() == "n")
+    {
+        repeat = checkAnswer(answer);
     } else {
-        repeat = false;
+        Console.WriteLine("Unknow command, please wtite again:");
+        Console.WriteLine("Repear?(Y/N)");
+        answer = Console.ReadLine();
+        repeat = checkAnswer(answer);
     }
 }
 
-
 repeat = true;
-
-Console.WriteLine();
-Console.WriteLine("Program 4");
 
 values = new int[3];
 
 while (repeat) 
 {
+    Console.WriteLine();
+    Console.WriteLine("Program 4");
+
     Console.WriteLine("Enter tree values:");
     for(int i = 0; i < values.Length; i++)
         values[i] = Convert.ToInt32(Console.ReadLine());
@@ -50,20 +63,25 @@ while (repeat)
 
     Console.WriteLine("Repear?(Y/N)");
     answer = Console.ReadLine();
-    if(answer.ToLower().Trim() == "y"){
-        repeat = true;
+
+    if (answer.ToLower().Trim() == "y" || answer.ToLower().Trim() == "n")
+    {
+        repeat = checkAnswer(answer);
     } else {
-        repeat = false;
+        Console.WriteLine("Unknow command, please wtite again:");
+        Console.WriteLine("Repear?(Y/N)");
+        answer = Console.ReadLine();
+        repeat = checkAnswer(answer);
     }
 }
 
 repeat = true;
 
-Console.WriteLine();
-Console.WriteLine("Program 6");
-
 while (repeat) 
 {
+    Console.WriteLine();
+    Console.WriteLine("Program 6");
+
     Console.WriteLine("Enter value:");
     int value = Convert.ToInt32(Console.ReadLine());
 
@@ -74,10 +92,15 @@ while (repeat)
 
     Console.WriteLine("Repear?(Y/N)");
     answer = Console.ReadLine();
-    if(answer.ToLower().Trim() == "y"){
-        repeat = true;
+
+    if (answer.ToLower().Trim() == "y" || answer.ToLower().Trim() == "n")
+    {
+        repeat = checkAnswer(answer);
     } else {
-        repeat = false;
+        Console.WriteLine("Unknow command, please wtite again:");
+        Console.WriteLine("Repear?(Y/N)");
+        answer = Console.ReadLine();
+        repeat = checkAnswer(answer);
     }
 }
 
@@ -98,10 +121,15 @@ while (repeat)
 
     Console.WriteLine("Repear?(Y/N)");
     answer = Console.ReadLine();
-    if(answer.ToLower().Trim() == "y"){
-        repeat = true;
+
+    if (answer.ToLower().Trim() == "y" || answer.ToLower().Trim() == "n")
+    {
+        repeat = checkAnswer(answer);
     } else {
-        repeat = false;
+        Console.WriteLine("Unknow command, please wtite again:");
+        Console.WriteLine("Repear?(Y/N)");
+        answer = Console.ReadLine();
+        repeat = checkAnswer(answer);
     }
 }   
 
