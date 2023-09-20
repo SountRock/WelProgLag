@@ -40,6 +40,7 @@ bool repeat = true;
 while (repeat){
     Console.WriteLine();
     Console.WriteLine("Program 10");
+    Console.WriteLine("Enter number:");
     int num = Convert.ToInt32(Console.ReadLine());
     SecondDigital(num);
     repeat = RepeatSys();
@@ -48,29 +49,25 @@ while (repeat){
 
 
 /////////////////////////////////////////////
-int ThirdDigital(string numStr = ""){
-    if (numStr.Length > 2) {
-        if (numStr[0] != '-') {
-            return numStr[2] - 48;
-            //походу индекс цифр здесь идет с 48. 
-        } else {
-            return numStr[3] - 48;
-        }
-    } else {
-        return -1;
-    } 
+int ThirdDigital(int num = 0){
+    while(num > 999){
+        num = num / 10;
+    }
+    return num % 10;
 }
 
 repeat = true;
 while (repeat){
     Console.WriteLine();
     Console.WriteLine("Program 13");
-    string number = Console.ReadLine(); 
-    int thirdDig = ThirdDigital(number);
-    if (thirdDig != -1) {
+    Console.WriteLine("Enter number:");
+    string numberStr = Console.ReadLine(); 
+    int number = Convert.ToInt32(numberStr);
+    if (numberStr.Length > 2) {
+        int thirdDig = ThirdDigital(number);
         Console.WriteLine($"Answer is {thirdDig}");
     } else {
-       Console.WriteLine("third digital is not exist!"); 
+        Console.WriteLine("third digital is not exist!"); 
     }
     repeat = RepeatSys();
 } 
