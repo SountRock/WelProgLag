@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj": {}
+    "d:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj": {}
   },
   "projects": {
-    "D:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj": {
+    "d:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj",
+        "projectUniqueName": "d:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj",
         "projectName": "HWSeminar2",
-        "projectPath": "D:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj",
+        "projectPath": "d:\\GB\\HWC#\\HWSeminar2\\HWSeminar2.csproj",
         "packagesPath": "C:\\Users\\LKDat\\.nuget\\packages\\",
-        "outputPath": "D:\\GB\\HWC#\\HWSeminar2\\obj\\",
+        "outputPath": "d:\\GB\\HWC#\\HWSeminar2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

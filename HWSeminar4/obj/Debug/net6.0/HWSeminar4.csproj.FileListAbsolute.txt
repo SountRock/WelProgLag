@@ -1,0 +1,15 @@
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.csproj.AssemblyReference.cache
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.AssemblyInfoInputs.cache
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.AssemblyInfo.cs
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.csproj.CoreCompileInputs.cache
+D:\GB\HWC#\HWSeminar4\bin\Debug\net6.0\HWSeminar4.exe
+D:\GB\HWC#\HWSeminar4\bin\Debug\net6.0\HWSeminar4.deps.json
+D:\GB\HWC#\HWSeminar4\bin\Debug\net6.0\HWSeminar4.runtimeconfig.json
+D:\GB\HWC#\HWSeminar4\bin\Debug\net6.0\HWSeminar4.dll
+D:\GB\HWC#\HWSeminar4\bin\Debug\net6.0\HWSeminar4.pdb
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.dll
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\refint\HWSeminar4.dll
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.pdb
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\HWSeminar4.genruntimeconfig.cache
+D:\GB\HWC#\HWSeminar4\obj\Debug\net6.0\ref\HWSeminar4.dll
