@@ -1,29 +1,3 @@
-﻿/////////////////////////////////////////////
-//Эти методы просто для моего удобства, при проврке програм.
-bool checkAnswer(string answer)
-{
-    if(answer.ToLower().Trim() == "y"){
-        return true;
-    } else {
-        return false;
-    }
-}
-
-bool RepeatSys() {
-    Console.WriteLine("Repeat?(Y/N)");
-    string answer = Console.ReadLine();
-
-    if (answer.ToLower().Trim() == "y" || answer.ToLower().Trim() == "n")
-    {
-        return checkAnswer(answer);
-    } else {
-        Console.WriteLine("Unknow command, please wtite again:");
-        Console.WriteLine("Repeat?(Y/N)");
-        answer = Console.ReadLine();
-        return checkAnswer(answer);
-    }
-}
-
 //Basic Array Method////////////////////////////
 int[] CreateIntArray(int size){
     if (size > 0) {
