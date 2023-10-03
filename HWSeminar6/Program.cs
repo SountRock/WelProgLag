@@ -20,7 +20,7 @@ double[] EnterArray(int size){
 //////////////////////////////////////////////
 
 double CountOfBiggestZeroNumber(double[] input){
-    for (int i = 0; i < input.Length; i++)
+    for (int i = 1; i < input.Length; i++)
     {
         input[0] += Convert.ToInt32(input[i] > 0);
     }
@@ -28,7 +28,7 @@ double CountOfBiggestZeroNumber(double[] input){
 }
 //На основе того, что выше:
 double CountOfBiggestZeroNumber2(double[] input2){
-   for (int j = 0; j < input2.Length; input2[0] += Convert.ToInt32(input2[j] > 0), j++) {}
+   for (int j = 1; j < input2.Length; input2[0] += Convert.ToInt32(input2[j] > 0), j++) {}
    return input2[0];
 }
 
