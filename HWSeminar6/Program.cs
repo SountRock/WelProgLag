@@ -1,9 +1,11 @@
-﻿void PrintDoubleArray(double[] array){
+﻿void PrintDoubleArray(double[] array, int ignoreIndex){
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
-        Console.Write(array[i]);
-        if (i < array.Length - 1)
+        if(i != ignoreIndex)
+            Console.Write(array[i]);
+         
+        if (i < array.Length - 1 && i != ignoreIndex - 1)
             Console.Write(", ");
     }
     Console.WriteLine("]");
@@ -45,15 +47,33 @@ Console.WriteLine();
 
 /////////////////////////////////////////////////
 double[] СhartsCrossing(double k1, double b1, double k2, double b2){
-    double[] cross = new double[2];
-    cross[0] = (b2 - b1)/(k1-k2);
-    cross[1] = k1 * cross[0] + b1;
-    return cross;
+    double[] cross = new double[3];
+    if(k1 != k2 && b1 != b2) {
+        cross[0] = (b2 - b1)/(k1-k2);
+        cross[1] = k1 * cross[0] + b1;
+        cross[2] = 1;
+        return cross;
+    } else if(k1 != k2 && b1 == b2) { 
+        cross[0] = 0;
+        cross[1] = b1;
+        cross[2] = 1;
+        return cross;
+    } else {
+        cross[2] = 0;
+        return cross;
+    }
+    
 }
 
 string СhartsCrossing2(double k1, double b1, double k2, double b2){
-    string crossStr = "(" + ((b2 - b1)/(k1 - k2)).ToString() + ", " + ((b1 * k2 - b2 * k1)/(k2 - k1)).ToString() + ")";
-    return crossStr;
+    string crossStr = String.Empty;
+    if(k1 != k2 && b1 != b2) {
+        return crossStr = "(" + ((b2 - b1)/(k1 - k2)).ToString() + ", " + ((b1 * k2 - b2 * k1)/(k2 - k1)).ToString() + ")";
+    } else if(k1 != k2 && b1 == b2){ 
+        return crossStr = "(" + 0 + ", " + b1.ToString() + ")";
+    } else {
+        return crossStr = "Charts is equals or parallel";
+   }
 }
 
 Console.WriteLine("Program 43");
@@ -68,7 +88,12 @@ double b2 = float.Parse(Console.ReadLine());
 Console.WriteLine("The crossing in position: ");
 
 double[] position = СhartsCrossing(k1, b1, k2, b2);
-PrintDoubleArray(position);
+if(position[2] == 1) {
+    PrintDoubleArray(position, 2);
+} else {
+    Console.WriteLine("Charts is equals or parallel");
+}
+
 Console.WriteLine(СhartsCrossing2(k1, b1, k2, b2));
 /////////////////////////////////////////////////
 
