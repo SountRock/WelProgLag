@@ -14,22 +14,24 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GB\\HWC#\\HWSeminar6\\HWSeminar6.csproj",
+      "projectUniqueName": "d:\\GB\\HWC#\\HWSeminar6\\HWSeminar6.csproj",
       "projectName": "HWSeminar6",
-      "projectPath": "D:\\GB\\HWC#\\HWSeminar6\\HWSeminar6.csproj",
+      "projectPath": "d:\\GB\\HWC#\\HWSeminar6\\HWSeminar6.csproj",
       "packagesPath": "C:\\Users\\LKDat\\.nuget\\packages\\",
-      "outputPath": "D:\\GB\\HWC#\\HWSeminar6\\obj\\",
+      "outputPath": "d:\\GB\\HWC#\\HWSeminar6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\LKDat\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LKDat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

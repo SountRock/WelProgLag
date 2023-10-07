@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GB\\HWC#\\HWSeminar1\\HWSeminar1.csproj",
-      "projectName": "HWSeminar1",
-      "projectPath": "D:\\GB\\HWC#\\HWSeminar1\\HWSeminar1.csproj",
+      "projectUniqueName": "D:\\GB\\HWC#\\HWSeminar7\\HWSeminar7.csproj",
+      "projectName": "HWSeminar7",
+      "projectPath": "D:\\GB\\HWC#\\HWSeminar7\\HWSeminar7.csproj",
       "packagesPath": "C:\\Users\\LKDat\\.nuget\\packages\\",
-      "outputPath": "D:\\GB\\HWC#\\HWSeminar1\\obj\\",
+      "outputPath": "D:\\GB\\HWC#\\HWSeminar7\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

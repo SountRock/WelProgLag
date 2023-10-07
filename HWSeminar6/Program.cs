@@ -67,7 +67,7 @@ double[] СhartsCrossing(double k1, double b1, double k2, double b2){
 
 string СhartsCrossing2(double k1, double b1, double k2, double b2){
     string crossStr = String.Empty;
-    if(k1 != k2 && b1 != b2) {
+    if(k1 != k2 && b1 != b2){
         return crossStr = "(" + ((b2 - b1)/(k1 - k2)).ToString() + ", " + ((b1 * k2 - b2 * k1)/(k2 - k1)).ToString() + ")";
     } else if(k1 != k2 && b1 == b2){ 
         return crossStr = "(" + 0 + ", " + b1.ToString() + ")";
