@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GB\\HWC#\\HWSeminar1\\HWSeminar1.csproj",
-      "projectName": "HWSeminar1",
-      "projectPath": "D:\\GB\\HWC#\\HWSeminar1\\HWSeminar1.csproj",
+      "projectUniqueName": "D:\\GB\\HWC#\\Test\\Test.csproj",
+      "projectName": "Test",
+      "projectPath": "D:\\GB\\HWC#\\Test\\Test.csproj",
       "packagesPath": "C:\\Users\\LKDat\\.nuget\\packages\\",
-      "outputPath": "D:\\GB\\HWC#\\HWSeminar1\\obj\\",
+      "outputPath": "D:\\GB\\HWC#\\Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.415\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.414\\RuntimeIdentifierGraph.json"
       }
     }
   }
