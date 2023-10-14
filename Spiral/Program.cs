@@ -1,41 +1,31 @@
-﻿//!!!Исправить
-//!!!использовать переменную степени для правильного задания рулевых переменных
-int[,] Udzumaki(int[,] matrix){
-    int posX = 0;
-    int posY = 1;
-    int partX = 0;
-    int partY = -1;
+﻿int[,] Udzumaki(int[,] matrix){
+    int posX = 0; //индексы строк массива
+    int posY = 1; //индексы стобцов массива
+    //переменные, что определяют движение по массиву
+    int partX = 0; //рулевая переменная для строк
+    int partY = 1; //рулевая переменная для столбцов
 
     matrix[0,0] = 1;
-    bool turn = true;
-    int cycle = 0;
+    int cycle = 1;
+    
     while(matrix[posX, posY] == 0){ 
-        
-        matrix[posX, posY] = matrix[posX + partX, posY + partY] + 1;
+        matrix[posX, posY] = matrix[posX + (-1)*partX, posY + (-1)*partY] + 1;
 
-        if(posY + (-1)*partY >= matrix.GetLength(0) || posX + (-1)*partX >= matrix.GetLength(1) 
-        ){
-            Console.WriteLine($"partX {partX}");
-            Console.WriteLine($"partX {partY}");
-            cycle++; 
-            int temp = partX;
-            partX = partY;
+        //если мы выходим за границы, то сорершаем поворот на 90 градусов. 
+        if(posY + partY >= matrix.GetLength(1) - Convert.ToInt32(cycle/5) 
+        || posX + partX >= matrix.GetLength(0) - Convert.ToInt32(cycle/4)
+        || posY + partY < 0 + Convert.ToInt32(cycle/5)
+        || posX + partX < 0 + Convert.ToInt32(cycle/4)
+        ){  
+            cycle++;
+            int temp = Convert.ToInt32(Math.Pow((-1), cycle))*partX;
+            partX = Convert.ToInt32(Math.Pow((-1), cycle))*partY;
             partY = temp;
-            Console.WriteLine($"Rev partX {partX}");
-            Console.WriteLine($"Rev partX {partY}");
-            //posY = (posY - 1) + (-1)*partY;
-            //posX = (posX - 1) + (-1)*partX;
-   
-            
-        } 
+        }
 
-        posY = posY + (-1)*partY;
-        posX = posX + (-1)*partX; 
-
-        //posY--;
-        //posX--;
-        Console.WriteLine($"posY {posY}");
-        Console.WriteLine($"posX {posX}");
+        posY = posY + partY;
+        posX = posX + partX;
+        
     }
 
     return matrix;
@@ -43,7 +33,7 @@ int[,] Udzumaki(int[,] matrix){
 
 Console.WriteLine();
 Console.WriteLine("Program 62");
-int[,] arr1 = new int[5, 5];
+int[,] arr1 = new int[5, 7];
 arr1 = Udzumaki(arr1);
 
 for (int i = 0; i < arr1.GetLength(0); i++){
@@ -53,4 +43,3 @@ for (int i = 0; i < arr1.GetLength(0); i++){
     Console.WriteLine();
 }
 
-Console.WriteLine();

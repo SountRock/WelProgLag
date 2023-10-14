@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GB\\HWC#\\HWSpiral\\HWSpiral.csproj": {}
+    "D:\\GB\\HWC#\\Spiral\\HWSpiral.csproj": {}
   },
   "projects": {
-    "D:\\GB\\HWC#\\HWSpiral\\HWSpiral.csproj": {
+    "D:\\GB\\HWC#\\Spiral\\HWSpiral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GB\\HWC#\\HWSpiral\\HWSpiral.csproj",
+        "projectUniqueName": "D:\\GB\\HWC#\\Spiral\\HWSpiral.csproj",
         "projectName": "HWSpiral",
-        "projectPath": "D:\\GB\\HWC#\\HWSpiral\\HWSpiral.csproj",
+        "projectPath": "D:\\GB\\HWC#\\Spiral\\HWSpiral.csproj",
         "packagesPath": "C:\\Users\\LKDat\\.nuget\\packages\\",
-        "outputPath": "D:\\GB\\HWC#\\HWSpiral\\obj\\",
+        "outputPath": "D:\\GB\\HWC#\\Spiral\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
